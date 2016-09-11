@@ -10,5 +10,8 @@ public class Main {
         diamondExercises.drawIsoscelesTriangle(3);
         diamondExercises.drawDiamond(3);
         diamondExercises.drawDiamondWithName(3);
+
+        FizzBuzzExercise fizzBuzzExercise = new FizzBuzzExercise();
+        fizzBuzzExercise.drawFizzBuzz(15);
     }
 }
