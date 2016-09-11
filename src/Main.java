@@ -13,5 +13,8 @@ public class Main {
 
         FizzBuzzExercise fizzBuzzExercise = new FizzBuzzExercise();
         fizzBuzzExercise.drawFizzBuzz(15);
+
+        PrimeFactorsExercise primeFactorsExercise = new PrimeFactorsExercise();
+        primeFactorsExercise.generatePrimeFactors(30);
     }
 }
