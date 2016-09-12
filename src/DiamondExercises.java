@@ -1,14 +1,14 @@
 public class DiamondExercises {
-    public static void drawIsoscelesTriangle(int count) {
+    public void drawIsoscelesTriangle(int count) {
         drawUpper(count);
     }
 
-    public static void drawDiamond(int count) {
+    public void drawDiamond(int count) {
         drawUpper(count);
         drawDown(count);
     }
 
-    public static void drawDiamondWithName(int count) {
+    public void drawDiamondWithName(int count) {
         for (int i = 0; i < count - 1; i++) {
             for (int j = count - i - 1; j > 0; j--) {
                 System.out.print(' ');
@@ -22,7 +22,7 @@ public class DiamondExercises {
         drawDown(count);
     }
 
-    private static void drawUpper(int count) {
+    private void drawUpper(int count) {
         for (int i = 0; i < count; i++) {
             for (int j = count - i - 1; j > 0; j--) {
                 System.out.print(' ');
@@ -34,7 +34,7 @@ public class DiamondExercises {
         }
     }
 
-    private static void drawDown(int count) {
+    private void drawDown(int count) {
         for (int i = count - 1; i > 0; i--) {
             for (int j = i; j < count; j++) {
                 System.out.print(' ');

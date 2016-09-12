@@ -1,13 +1,15 @@
 public class PrimeFactorsExercise {
-    public static void generatePrimeFactors(int N) {
-        for (int i = 2; i <= N; i++) {
-            while (N != i) {
-                if (N % i == 0) {
+    public void generatePrimeFactors(int n) {
+        for (int i = 2; i <= n; i++) {
+            while (n != i) {
+                if (n % i == 0) {
                     System.out.println(i);
-                    N = N / i;
-                } else break;
+                    n = n / i;
+                } else {
+                    break;
+                }
             }
         }
-        System.out.println(N);
+        System.out.println(n);
     }
 }
